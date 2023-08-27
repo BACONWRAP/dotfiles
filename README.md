@@ -1,4 +1,5 @@
 #DOTFILES
+
 Things to install:
 zsh
 oh-my-zsh

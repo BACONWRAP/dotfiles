@@ -1,4 +1,4 @@
-#DOTFILES
+# DOTFILES
 
 Things to install:
 zsh

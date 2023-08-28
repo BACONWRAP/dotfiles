@@ -1,6 +1,6 @@
 # DOTFILES
 
-Things to install:
+## Things to install:
 
 zsh - from apt
 

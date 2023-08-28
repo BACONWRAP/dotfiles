@@ -2,7 +2,7 @@
 	email = hooke.christopher@gmail.com
 	name = BACONWRAP
 [core]
-	editor = vim
+	editor = nvim
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential

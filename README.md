@@ -1,7 +1,7 @@
 # DOTFILES
 
 Things to install:
-zsh
-oh-my-zsh
-powerlevel10k
-gh(cli)
+zsh - from apt
+[oh-my-zsh](https://ohmyz.sh/) - from link
+[powerlevel10k](https://github.com/romkatv/powerlevel10k) - from link
+gh(cli) - from apt

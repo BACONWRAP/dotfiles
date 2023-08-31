@@ -4,6 +4,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
     config: {
+        opacity: 0.7,
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
@@ -20,7 +21,7 @@ module.exports = {
         // letter spacing as a relative unit
         letterSpacing: 0,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-        cursorColor: 'rgba(248,28,229,0.8)',
+        cursorColor: 'rgba(255,255,255,0.8)',
         // terminal text color under BLOCK cursor
         cursorAccentColor: '#000',
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
@@ -137,7 +138,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: [],
+    plugins: ["hyper-opacity"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

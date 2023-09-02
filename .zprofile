@@ -1,4 +1,5 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# FOR MAC OS BREW PATH
+#eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo -e '    ____  ___   __________  _   ___       ______  ___    ____ ' | lolcat --seed=12304123 --spread=1
 echo -e '   / __ )/   | / ____/ __ \/ | / / |     / / __ \/   |  / __ \' | lolcat --seed=12304123 --spread=1

@@ -8,6 +8,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -109,12 +110,11 @@ source $ZSH/oh-my-zsh.sh
 alias 338='cd ~/CSCI338\ -\ Software\ Engineering'
 alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME' #This is for dotfile management with git
 alias v='nvim'
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# add vscode to path
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -123,3 +123,10 @@ export NVM_DIR="$HOME/.nvm"
 #MACOS LS colors
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# echo '    ____  ___   __________  _   ___       ______  ___    ____ '
+# echo '   / __ )/   | / ____/ __ \/ | / / |     / / __ \/   |  / __ \'
+# echo '  / __  / /| |/ /   / / / /  |/ /| | /| / / /_/ / /| | / /_/ /'
+# echo ' / /_/ / ___ / /___/ /_/ / /|  / | |/ |/ / _, _/ ___ |/ ____/ '
+# echo '/_____/_/  |_\____/\____/_/ |_/  |__/|__/_/ |_/_/  |_/_/      '
+# echo ''

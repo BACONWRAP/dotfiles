@@ -8,3 +8,5 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[alias]
+	sl = log --graph --oneline --all

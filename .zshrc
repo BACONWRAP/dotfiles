@@ -115,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 alias 338='cd ~/CSCI338\ -\ Software\ Engineering'
 alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME' #This is for dotfile management with git
 alias v='nvim'
-alias c='clear'
+alias kata='cd ~/codekata'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -148,7 +148,12 @@ require('lazy').setup({
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'onedark'
+      require('onedark').setup {
+        style = 'darker'
+      }
+      require('onedark').load()
     end,
+
   },
 
   {
@@ -235,6 +240,10 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
+
+-- Keep lines visible when scrolling
+vim.wo.scrolloff = 5
 
 -- Enable mouse mode
 vim.o.mouse = 'a'

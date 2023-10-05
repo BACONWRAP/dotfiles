@@ -141,7 +141,7 @@ require('lazy').setup({
       end,
     },
   },
-
+--[[
   {
     -- Theme inspired by Atom
     'navarasu/onedark.nvim',
@@ -155,6 +155,27 @@ require('lazy').setup({
     end,
 
   },
+]]--
+  {
+    "roobert/palette.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("palette").setup({
+        palettes = {
+          -- dark or light
+          main = "dark",
+
+          -- pastel, bright or dark
+          accent = "dark",
+          state = "dark",
+        },
+
+        italics = true,
+        transparent_background = false,
+      })
+    end,
+  },
 
   {
     -- Set lualine as statusline
@@ -163,7 +184,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
@@ -177,8 +198,7 @@ require('lazy').setup({
     -- See `:help indent_blankline.txt`
     config = function()
       require('ibl').setup {
-        char = '┊',
-        show_trailing_blankline_indent = false,
+        indent = {char = '┊' },
       }
     end,
   },

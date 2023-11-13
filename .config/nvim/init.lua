@@ -104,41 +104,6 @@ require('lazy').setup({
       end,
     },
   },
-  --[[
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-      require('onedark').setup {
-        style = 'darker'
-      }
-      require('onedark').load()
-    end,
-
-  },
-]] --
-  {
-    "roobert/palette.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("palette").setup({
-        palettes = {
-          -- dark or light
-          main = "dark",
-
-          -- pastel, bright or dark
-          accent = "dark",
-          state = "dark",
-        },
-
-        italics = true,
-        transparent_background = false,
-      })
-    end,
-  },
 
   {
     -- Set lualine as statusline

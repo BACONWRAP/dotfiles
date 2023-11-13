@@ -6,7 +6,11 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+      renderer = {
+       highlight_git = true,
+      },
+    }
   end,
   vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<CR>', {desc = 'Toggle [f]ile tree'})
 }

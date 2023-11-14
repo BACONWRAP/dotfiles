@@ -1,3 +1,10 @@
+echo -e '    ____  ___   __________  _   ___       ______  ___    ____ ' | lolcat --seed=12304123 --spread=1
+echo -e '   / __ )/   | / ____/ __ \/ | / / |     / / __ \/   |  / __ \' | lolcat --seed=12304123 --spread=1
+echo -e '  / __  / /| |/ /   / / / /  |/ /| | /| / / /_/ / /| | / /_/ /' | lolcat --seed=12304123 --spread=1
+echo -e ' / /_/ / ___ / /___/ /_/ / /|  / | |/ |/ / _, _/ ___ |/ ____/ ' | lolcat --seed=12304123 --spread=1
+echo -e '/_____/_/  |_\____/\____/_/ |_/  |__/|__/_/ |_/_/  |_/_/      ' | lolcat --seed=12304123 --spread=1
+echo -e ''
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -70,7 +77,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="mm/dd/yyyy"
@@ -83,7 +89,9 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+source $(dirname $(gem which colorls))/tab_complete.sh
+bindkey '^ ' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,13 +128,11 @@ alias kata='cd ~/codekata'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+export LS_COLORS="di=1;34:ln=1;36:so=1;31:pi=1;33:ex=1;32:bd=1;34;46:cd=1;34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# echo '    ____  ___   __________  _   ___       ______  ___    ____ '
-# echo '   / __ )/   | / ____/ __ \/ | / / |     / / __ \/   |  / __ \'
-# echo '  / __  / /| |/ /   / / / /  |/ /| | /| / / /_/ / /| | / /_/ /'
-# echo ' / /_/ / ___ / /___/ /_/ / /|  / | |/ |/ / _, _/ ___ |/ ____/ '
-# echo '/_____/_/  |_\____/\____/_/ |_/  |__/|__/_/ |_/_/  |_/_/      '
-# echo ''

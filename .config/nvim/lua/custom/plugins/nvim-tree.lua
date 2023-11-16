@@ -10,6 +10,9 @@ return {
       renderer = {
        highlight_git = true,
       },
+      filters = {
+        dotfiles = true,
+      },
     }
   end,
   vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<CR>', {desc = 'Toggle [f]ile tree'})

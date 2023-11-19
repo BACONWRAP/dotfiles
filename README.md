@@ -22,7 +22,7 @@ echo ".mycfg" >> .gitignore
 ```
 
 ```
-git clone --bare <git-repo-url> $HOME/.mycfg
+git clone --bare git@github.com:BACONWRAP/dotfiles.git $HOME/.mycfg
 ```
 
 ```

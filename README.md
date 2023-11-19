@@ -13,15 +13,30 @@
 - gh(cli) - from apt
 
 ### to install:
-```alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME'```
-```echo ".mycfg" >> .gitignore```
-```git clone --bare <git-repo-url> $HOME/.mycfg```
-```config checkout```
+```
+alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME'
+```
+
+```
+echo ".mycfg" >> .gitignore
+```
+
+```
+git clone --bare <git-repo-url> $HOME/.mycfg
+```
+
+```
+config checkout
+```
 
 if files conflict, run:
-```mkdir -p .config-backup && \
+```
+mkdir -p .config-backup && \
 config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
-xargs -I{} mv {} .config-backup/{}```
+xargs -I{} mv {} .config-backup/{}
+```
 
 don't track your whole home folder dummy:
-```config config --local status.showUntrackedFiles no```
+```
+config config --local status.showUntrackedFiles no
+```

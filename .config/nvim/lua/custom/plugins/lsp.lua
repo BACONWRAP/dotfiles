@@ -15,4 +15,7 @@ return {
     -- Additional lua configuration, makes nvim stuff amazing!
     'folke/neodev.nvim',
   },
+  config = function()
+    local lspconfig = require 'lspconfig'
+  end,
 }

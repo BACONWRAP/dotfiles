@@ -123,6 +123,7 @@ alias 338='cd ~/CSCI338\ -\ Software\ Engineering'
 alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME' #This is for dotfile management with git
 alias v='nvim'
 alias kata='cd ~/codekata'
+alias cl='clear'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -137,3 +138,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 bindkey '^ ' autosuggest-accept
+
+# Add local bin to path
+export PATH=$PATH:$HOME/.local/bin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

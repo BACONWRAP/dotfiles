@@ -121,7 +121,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias 338='cd ~/CSCI338\ -\ Software\ Engineering'
 alias config='/usr/bin/git --git-dir=$HOME/.mycfg/ --work-tree=$HOME' #This is for dotfile management with git
-alias v='nvim'
+alias vim='nvim'
 alias kata='cd ~/codekata'
 alias cl='clear'
 

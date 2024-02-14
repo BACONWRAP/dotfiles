@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 echo -e '    ____  ___   __________  _   ___       ______  ___    ____ ' | lolcat --seed=12304123 --spread=1
 echo -e '   / __ )/   | / ____/ __ \/ | / / |     / / __ \/   |  / __ \' | lolcat --seed=12304123 --spread=1
 echo -e '  / __  / /| |/ /   / / / /  |/ /| | /| / / /_/ / /| | / /_/ /' | lolcat --seed=12304123 --spread=1
@@ -145,3 +147,6 @@ export PATH=$PATH:$HOME/.local/bin
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"

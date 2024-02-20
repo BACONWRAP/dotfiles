@@ -1,20 +1,15 @@
 return {
-  'roobert/palette.nvim',
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require('palette').setup {
-      palettes = {
-        -- dark or light
-        main = 'dark',
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
+    config = function()
+      require('catppuccin').setup {
+        transparent_background = true,
+        flavour = 'mocha',
+      }
 
-        -- pastel, bright or dark
-        accent = 'dark',
-        state = 'dark',
-      },
-
-      italics = true,
-      transparent_background = true,
-    }
-  end,
+      vim.cmd 'colorscheme catppuccin'
+    end,
+  },
 }
